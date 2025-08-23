@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Uttam Chand Maurya – Software Engineer</title>
+  <meta name="description" content="Personal website of Uttam Chand Maurya, Software Engineer (3+ years). ASP.NET, AngularJS, SQL Server, JavaScript, MVC Core." />
+  <meta name="author" content="Uttam Chand Maurya" />
+  <meta property="og:title" content="Uttam Chand Maurya – Software Engineer" />
+  <meta property="og:description" content="ASP.NET • AngularJS • SQL Server • JavaScript • MVC Core" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230B62F6'/><text x='50' y='58' font-size='56' text-anchor='middle' fill='white' font-family='Arial'>U</text></svg>">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Tailwind config (optional custom colors)
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eff6ff', 100: '#dbeafe', 200: '#bfdbfe', 300: '#93c5fd', 400: '#60a5fa',
+              500: '#3b82f6', 600: '#2563eb', 700: '#1d4ed8', 800: '#1e40af', 900: '#1e3a8a'
+            }
+          },
+          boxShadow: {
+            soft: '0 10px 30px -12px rgba(0,0,0,0.25)'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+
+  <!-- JSON-LD structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Uttam Chand Maurya",
+    "jobTitle": "Software Engineer",
+    "email": "mailto:mauryauttam06@gmail.com",
+    "telephone": "+91 7275865890",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Ayodhya",
+      "addressRegion": "Uttar Pradesh",
+      "addressCountry": "IN"
+    },
+    "knowsAbout": ["ASP.NET", "C#", "SQL Server", "MVC", "AngularJS", "JavaScript", "jQuery", "HTML", "CSS"],
+    "alumniOf": [
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "Dr. Rammanohar Lohia Avadh University",
+        "sameAs": "https://www.rmlau.ac.in/"
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="bg-white text-slate-800 dark:bg-slate-950 dark:text-slate-100">
+  <!-- Sticky Nav -->
+  <header class="sticky top-0 z-40 backdrop-blur bg-white/80 dark:bg-slate-950/70 border-b border-slate-200/60 dark:border-slate-800">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex items-center justify-between h-16">
+        <a href="#home" class="font-semibold tracking-tight text-slate-800 dark:text-white">Uttam<span class="text-brand-600">.</span></a>
+        <nav class="hidden md:flex gap-6 text-sm">
+          <a href="#about" class="hover:text-brand-600">About</a>
+          <a href="#skills" class="hover:text-brand-600">Skills</a>
+          <a href="#experience" class="hover:text-brand-600">Experience</a>
+          <a href="#projects" class="hover:text-brand-600">Projects</a>
+          <a href="#education" class="hover:text-brand-600">Education</a>
+          <a href="#contact" class="hover:text-brand-600">Contact</a>
+        </nav>
+        <div class="flex items-center gap-2">
+          <button id="themeToggle" class="p-2 rounded-xl border border-slate-200 dark:border-slate-700 hover:shadow-soft" aria-label="Toggle dark mode">
+            <svg id="sunIcon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 hidden" viewBox="0 0 20 20" fill="currentColor"><path d="M10 3a1 1 0 011 1v1a1 1 0 11-2 0V4a1 1 0 011-1zm0 11a4 4 0 100-8 4 4 0 000 8zm7-4a1 1 0 011 1h1a1 1 0 110 2h-1a1 1 0 01-1-1 1 1 0 112 0 1 1 0 01-1-1zm-7 6a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM3 10a1 1 0 011-1H5a1 1 0 110 2H4a1 1 0 01-1-1zm12.657-5.657a1 1 0 011.415 1.415l-.707.707a1 1 0 01-1.415-1.415l.707-.707zM4.636 15.364a1 1 0 011.414 0l.707.707a1 1 0 11-1.414 1.414l-.707-.707a1 1 0 010-1.414zM4.636 4.636a1 1 0 010 1.414L3.93 6.757A1 1 0 112.515 5.343l.707-.707a1 1 0 011.414 0zm11.314 11.314a1 1 0 010 1.414l-.707.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0z"/></svg>
+            <svg id="moonIcon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M21.64 13a1 1 0 00-1.05-1.36 8 8 0 01-8.23-11 1 1 0 00-1.51-1.11A10 10 0 1019.64 14a1 1 0 002-1z"/></svg>
+          </button>
+          <a href="#contact" class="hidden sm:inline-block px-3 py-2 rounded-xl bg-brand-600 text-white text-sm hover:bg-brand-700">Hire Me</a>
+          <button class="md:hidden p-2" id="menuBtn" aria-label="Open menu">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+          </button>
+        </div>
+      </div>
+      <nav id="mobileMenu" class="md:hidden hidden pb-4">
+        <ul class="grid gap-2 text-sm">
+          <li><a class="block px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800" href="#about">About</a></li>
+          <li><a class="block px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800" href="#skills">Skills</a></li>
+          <li><a class="block px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800" href="#experience">Experience</a></li>
+          <li><a class="block px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800" href="#projects">Projects</a></li>
+          <li><a class="block px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800" href="#education">Education</a></li>
+          <li><a class="block px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="relative overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4 py-20 md:py-28">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <p class="inline-flex items-center gap-2 text-xs font-medium px-3 py-1 rounded-full bg-brand-50 text-brand-700 ring-1 ring-brand-200">Open to Opportunities<span class="inline-block h-2 w-2 rounded-full bg-brand-500"></span></p>
+          <h1 class="mt-4 text-4xl md:text-5xl font-extrabold tracking-tight">Hi, I'm <span class="text-brand-600">Uttam Chand Maurya</span></h1>
+          <p class="mt-4 text-lg text-slate-600 dark:text-slate-300">Software Engineer with 3+ years of experience building robust web apps in <span class="font-semibold">ASP.NET, C#, SQL Server, AngularJS, JavaScript</span> and MVC Core.</p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="#projects" class="px-5 py-3 rounded-xl bg-brand-600 text-white font-medium hover:bg-brand-700">View Projects</a>
+            <a href="Uttam Resume 3 year Exp.pdf" download class="px-5 py-3 rounded-xl border border-slate-300 dark:border-slate-700 hover:shadow-soft">Download Résumé</a>
+          </div>
+          <div class="mt-6 text-sm text-slate-600 dark:text-slate-400 flex flex-wrap gap-4">
+            <a href="mailto:mauryauttam06@gmail.com" class="hover:text-brand-600">mauryauttam06@gmail.com</a>
+            <span>•</span>
+            <a href="tel:+917275865890" class="hover:text-brand-600">+91 7275865890</a>
+            <span>•</span>
+            <span>Ayodhya, Uttar Pradesh, India</span>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="aspect-square rounded-3xl bg-gradient-to-br from-brand-200 via-brand-100 to-white dark:from-brand-800/30 dark:via-brand-900/20 dark:to-slate-900 p-1">
+            <div class="h-full w-full rounded-3xl bg-white/80 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 grid place-items-center">
+              <div class="text-center p-8">
+                <p class="text-sm uppercase tracking-wider text-slate-500 dark:text-slate-400">Primary Stack</p>
+                <p class="mt-3 text-2xl font-semibold">ASP.NET • C# • SQL Server</p>
+                <p class="mt-1 text-lg">AngularJS • JavaScript • jQuery</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16 md:py-20 border-t border-slate-200/70 dark:border-slate-800">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid md:grid-cols-3 gap-8 items-start">
+        <div class="md:col-span-2">
+          <h2 class="text-2xl font-bold">About Me</h2>
+          <p class="mt-4 text-slate-600 dark:text-slate-300">Experienced software engineer with 3+ years in software development, committed to high-quality work, team success, and continuous learning. Passionate about building hospital information systems and ERP modules that create real impact.</p>
+        </div>
+        <div class="bg-slate-50 dark:bg-slate-900/50 rounded-2xl p-6 border border-slate-200 dark:border-slate-800">
+          <h3 class="font-semibold">Quick Info</h3>
+          <ul class="mt-3 text-sm space-y-2">
+            <li><span class="text-slate-500">Based in:</span> Ayodhya, Uttar Pradesh</li>
+            <li><span class="text-slate-500">Experience:</span> 3+ years</li>
+            <li><span class="text-slate-500">Interests:</span> New Tech, Coding, Games, Music, Travelling</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-16 md:py-20">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold">Skills</h2>
+      <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="p-5 border rounded-2xl bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-800">
+          <h3 class="font-semibold">Languages & Core</h3>
+          <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">C, C++, C#, OOPs, JavaScript</p>
+        </div>
+        <div class="p-5 border rounded-2xl bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-800">
+          <h3 class="font-semibold">Web & Frameworks</h3>
+          <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">HTML, CSS, ASP.NET, MVC Core, AngularJS, jQuery</p>
+        </div>
+        <div class="p-5 border rounded-2xl bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-800">
+          <h3 class="font-semibold">Database</h3>
+          <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">SQL Server, T-SQL, Stored Procedures, Reporting</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="py-16 md:py-20 bg-slate-50 dark:bg-slate-900/40 border-y border-slate-200/70 dark:border-slate-800">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold">Work Experience</h2>
+      <ol class="mt-8 relative border-s border-slate-200 dark:border-slate-800">
+        <!-- Role 1 -->
+        <li class="ms-6 py-6">
+          <span class="absolute -start-2.5 flex h-5 w-5 items-center justify-center rounded-full bg-brand-600 text-white text-xs">1</span>
+          <div class="p-5 rounded-2xl border bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-800">
+            <div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-2">
+              <h3 class="font-semibold">Software Engineer – Criterion Tech Pvt. Ltd</h3>
+              <span class="text-sm text-slate-500">Nov 2022 – Present • Lucknow</span>
+            </div>
+            <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Working on health-related software with a focus on a comprehensive Hospital Information System (HIS) for Era's Medical College & Hospital.</p>
+            <ul class="mt-3 text-sm list-disc ps-5 space-y-1 text-slate-700 dark:text-slate-300">
+              <li>Developed modules & reports: Patient registration/admission/discharge, Employee duty & attendance, Department-wise performance, Billing & Finance.</li>
+              <li>Built features like Patient Tracking System, Employee Duty Module, Prescription, Vitals, and Daily ICU Chart.</li>
+              <li>Stack: JavaScript, AngularJS, ASP.NET, SQL Server.</li>
+            </ul>
+          </div>
+        </li>
+        <!-- Role 2 -->
+        <li class="ms-6 py-6">
+          <span class="absolute -start-2.5 flex h-5 w-5 items-center justify-center rounded-full bg-brand-600 text-white text-xs">2</span>
+          <div class="p-5 rounded-2xl border bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-800">
+            <div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-2">
+              <h3 class="font-semibold">Jr. Software Engineer – Pushpatechsoft Pvt. Ltd</h3>
+              <span class="text-sm text-slate-500">Jan 2022 – Nov 2022 • Lucknow</span>
+            </div>
+            <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Contributed to web application development across the Microsoft stack, collaborating closely with senior engineers and stakeholders.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-16 md:py-20">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex items-end justify-between gap-4">
+        <h2 class="text-2xl font-bold">Projects</h2>
+        <a href="#contact" class="text-sm hover:text-brand-600">Need something similar?</a>
+      </div>
+      <div class="mt-8 grid md:grid-cols-2 gap-6">
+        <!-- Project 1: HIS -->
+        <article class="group p-6 rounded-2xl border bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-800 hover:shadow-soft transition">
+          <header class="flex items-baseline justify-between">
+            <h3 class="font-semibold">Hospital Information System (HIS)</h3>
+            <span class="text-xs text-slate-500">Aug 2022 – Present</span>
+          </header>
+          <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">A department-wise hospital management platform: Registration, OPD, IPD, ICU, Pathology, Admin, Blood Bank, Store, Cash, Dashboards, and more.</p>
+          <ul class="mt-3 text-sm list-disc ps-5 space-y-1 text-slate-700 dark:text-slate-300">
+            <li>Designed reports for patient flow, treatment history, and revenue.</li>
+            <li>Implemented Employee Duty management and Patient Tracking.</li>
+            <li>Tech: AngularJS, ASP.NET, SQL Server, JS.</li>
+          </ul>
+          <div class="mt-4 flex flex-wrap gap-2 text-xs">
+            <span class="px-2 py-1 rounded-lg bg-slate-100 dark:bg-slate-800">AngularJS</span>
+            <span class="px-2 py-1 rounded-lg bg-slate-100 dark:bg-slate-800">ASP.NET</span>
+            <span class="px-2 py-1 rounded-lg bg-slate-100 dark:bg-slate-800">SQL Server</span>
+          </div>
+        </article>
+        <!-- Project 2: ERP Training Module -->
+        <article class="group p-6 rounded-2xl border bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-800 hover:shadow-soft transition">
+          <header class="flex items-baseline justify-between">
+            <h3 class="font-semibold">ERP Training Module</h3>
+            <span class="text-xs text-slate-500">Jul 2022 – Present</span>
+          </header>
+          <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">A training system for freshers/interns covering ERP concepts with hands-on modules.</p>
+          <ul class="mt-3 text-sm list-disc ps-5 space-y-1 text-slate-700 dark:text-slate-300">
+            <li>Frontend using jQuery & AJAX for interactive lessons.</li>
+            <li>Backend built on ASP.NET with SQL database.</li>
+          </ul>
+          <div class="mt-4 flex flex-wrap gap-2 text-xs">
+            <span class="px-2 py-1 rounded-lg bg-slate-100 dark:bg-slate-800">jQuery</span>
+            <span class="px-2 py-1 rounded-lg bg-slate-100 dark:bg-slate-800">AJAX</span>
+            <span class="px-2 py-1 rounded-lg bg-slate-100 dark:bg-slate-800">ASP.NET</span>
+            <span class="px-2 py-1 rounded-lg bg-slate-100 dark:bg-slate-800">SQL</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="py-16 md:py-20 bg-slate-50 dark:bg-slate-900/40 border-y border-slate-200/70 dark:border-slate-800">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold">Education</h2>
+      <div class="mt-6 grid gap-4 md:grid-cols-2">
+        <div class="p-5 rounded-2xl border bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-800">
+          <h3 class="font-semibold">MCA – Dr. Rammanohar Lohia Avadh University</h3>
+          <p class="text-sm text-slate-500">2018 – 2021 • Ayodhya • 74.45%</p>
+        </div>
+        <div class="p-5 rounded-2xl border bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-800">
+          <h3 class="font-semibold">BCA – Dr. Rammanohar Lohia Avadh University</h3>
+          <p class="text-sm text-slate-500">2015 – 2018 • Ayodhya • 63.64%</p>
+        </div>
+        <div class="p-5 rounded-2xl border bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-800">
+          <h3 class="font-semibold">Intermediate (12th) – Prabha Inter College (U.P. Board)</h3>
+          <p class="text-sm text-slate-500">2014 – 2015 • Ambedkarnagar • 60%</p>
+        </div>
+        <div class="p-5 rounded-2xl border bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-800">
+          <h3 class="font-semibold">High School (10th) – SSM HSS K G Road Goshainganj (U.P. Board)</h3>
+          <p class="text-sm text-slate-500">2012 – 2013 • Ayodhya • 82.5%</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Languages & Interests -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="p-6 rounded-2xl border bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-800">
+          <h2 class="text-2xl font-bold">Languages</h2>
+          <ul class="mt-3 text-sm space-y-2">
+            <li>Hindi — Full Professional Proficiency</li>
+            <li>English — Professional Working Proficiency</li>
+          </ul>
+        </div>
+        <div class="p-6 rounded-2xl border bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-800">
+          <h2 class="text-2xl font-bold">Interests</h2>
+          <p class="mt-3 text-sm text-slate-600 dark:text-slate-300">Learning new technologies, coding, playing games, listening to music, and travelling.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 md:py-20 bg-gradient-to-b from-white to-slate-50 dark:from-slate-950 dark:to-slate-900 border-t border-slate-200/70 dark:border-slate-800">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-2">
+          <h2 class="text-2xl font-bold">Get in Touch</h2>
+          <p class="mt-2 text-slate-600 dark:text-slate-300">Have an opportunity or project? Let's talk. I usually reply within a day.</p>
+          <form class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4" onsubmit="openMail(event)">
+            <input class="px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900" placeholder="Your Name" required />
+            <input type="email" class="px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900" placeholder="Email" required />
+            <input class="sm:col-span-2 px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900" placeholder="Subject" required />
+            <textarea rows="4" class="sm:col-span-2 px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900" placeholder="Message" required></textarea>
+            <button class="sm:col-span-2 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-brand-600 text-white font-medium hover:bg-brand-700">Send Message</button>
+          </form>
+        </div>
+        <aside class="p-6 rounded-2xl border bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-800 h-max">
+          <h3 class="font-semibold">Contact Details</h3>
+          <ul class="mt-3 space-y-2 text-sm">
+            <li><span class="text-slate-500">Email:</span> <a class="hover:text-brand-600" href="mailto:mauryauttam06@gmail.com">mauryauttam06@gmail.com</a></li>
+            <li><span class="text-slate-500">Phone:</span> <a class="hover:text-brand-600" href="tel:+917275865890">+91 7275865890</a></li>
+            <li><span class="text-slate-500">Location:</span> Ayodhya, Uttar Pradesh, India</li>
+            <li><span class="text-slate-500">DOB:</span> 05 June 1998</li>
+            <li><a class="inline-flex items-center gap-2 text-brand-700 hover:underline" href="Uttam Resume 3 year Exp.pdf" download><span>Download Résumé (PDF)</span></a></li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-500">
+        <p>© <span id="year"></span> Uttam Chand Maurya. All rights reserved.</p>
+        <div class="flex items-center gap-4">
+          <a href="#home" class="hover:text-brand-600">Back to top ↑</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Dark mode toggle with localStorage persistence
+    const themeToggle = document.getElementById('themeToggle');
+    const sunIcon = document.getElementById('sunIcon');
+    const moonIcon = document.getElementById('moonIcon');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuBtn = document.getElementById('menuBtn');
+
+    function setTheme(dark) {
+      const root = document.documentElement;
+      if (dark) {
+        root.classList.add('dark');
+        sunIcon.classList.remove('hidden');
+        moonIcon.classList.add('hidden');
+        localStorage.setItem('theme', 'dark');
+      } else {
+        root.classList.remove('dark');
+        sunIcon.classList.add('hidden');
+        moonIcon.classList.remove('hidden');
+        localStorage.setItem('theme', 'light');
+      }
+    }
+
+    // Initialize theme
+    const storedTheme = localStorage.getItem('theme');
+    setTheme(storedTheme ? storedTheme === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches);
+
+    themeToggle.addEventListener('click', () => setTheme(!document.documentElement.classList.contains('dark')));
+
+    // Mobile menu toggle
+    menuBtn && menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Simple mailto handler using the contact form
+    function openMail(e) {
+      e.preventDefault();
+      const [nameEl, emailEl, subjectEl, messageEl] = e.target.elements;
+      const name = encodeURIComponent(nameEl.value.trim());
+      const email = encodeURIComponent(emailEl.value.trim());
+      const subject = encodeURIComponent(subjectEl.value.trim());
+      const message = encodeURIComponent(messageEl.value.trim());
+      const body = `Hi, I'm ${name} (%3C${email}%3E).%0D%0A%0D%0A${message}`;
+      window.location.href = `mailto:mauryauttam06@gmail.com?subject=${subject}&body=${body}`;
+    }
+    window.openMail = openMail;
+  </script>
+</body>
+</html>
